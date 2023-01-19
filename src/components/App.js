@@ -1,14 +1,25 @@
 
+import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/App.css';
+import LocationDetails from './LocationDetails';
 
-function App() {
+
+function App({ location }) {
+  const {city, country} = location;
   return (
-    <div className ='App'>
-      <header className="App-header">
-        <h1>Weather App</h1>
-      </header>    
-    </div>
+    <LocationDetails
+      city={city}
+      country={country}
+    />
   );
-}
+};
+
+App.propTypes = {
+  location: PropTypes.shape({
+    city: PropTypes.string,
+    country: PropTypes.string,
+  }).isRequired,
+};
 //<img src={} className="App-logo" alt="logo" /> belongs under header classname
 export default App;
