@@ -35,7 +35,4 @@ describe("ForecastSummaries", () => {
 
     expect(getAllByTestId("forecast-summary")).toHaveLength(2);
   });
-
 });
-
-

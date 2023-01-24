@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../styles/App.css";
+import "../styles/App";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 
