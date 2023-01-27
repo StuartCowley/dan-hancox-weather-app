@@ -12,7 +12,7 @@ function App({ location, forecasts }) {
 
       <ForecastSummaries forecasts={forecasts} />
 
-      <ForecastDetails forecast={forecasts[3]} />
+      <ForecastDetails forecast={forecasts[1]} />
     </div>
   );
 }
