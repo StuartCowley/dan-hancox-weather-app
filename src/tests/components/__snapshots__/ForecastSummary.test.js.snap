@@ -33,7 +33,7 @@ exports[`ForecastSummary renders correctly 1`] = `
     <button
       type="button"
     >
-      More Details
+      More details
     </button>
   </div>
 </DocumentFragment>
