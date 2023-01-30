@@ -34,7 +34,7 @@ exports[`ForecastDetails renders correctly 1`] = `
     <div
       class="forecast-details__humidity"
     >
-      Humidity: 80
+      Humidity: 60
     </div>
   </div>
 </DocumentFragment>
