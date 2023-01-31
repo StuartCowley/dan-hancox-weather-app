@@ -14,18 +14,3 @@ exports[`App renders App 1`] = `
   </div>
 </DocumentFragment>
 `;
-
-exports[`App renders App as asserted 1`] = `
-<DocumentFragment>
-  <div
-    class="weather-app"
-  >
-    <h1>
-      , 
-    </h1>
-    <div
-      class="forecast-summaries"
-    />
-  </div>
-</DocumentFragment>
-`;
