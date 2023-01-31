@@ -4,7 +4,7 @@ import SearchForm from "../../components/SearchForm";
 
 describe("it renders correctly", () => {
   it("renders a search box and button", () => {
-    const { asFragment } = render(<SearchForm />);
+    const { asFragment } = render(<SearchForm searchText setSearchText onSubmit/>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

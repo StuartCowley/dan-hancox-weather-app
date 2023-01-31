@@ -21,11 +21,11 @@ function App() {
   };
 
   const handleCitySearch = () => {
-    getForecast(setSelectedDate, setForecasts, setLocation, searchText);
+    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
   };
 
   useEffect(() => {
-    getForecast(setSelectedDate, setForecasts, setLocation);
+    getForecast("", setSelectedDate, setForecasts, setLocation);
   }, []);
 
   return (

@@ -6,11 +6,12 @@ exports[`it renders correctly renders a search box and button 1`] = `
     class="search-form"
   >
     <input
+      class="search-container"
       type="text"
-      value=""
+      value="true"
     />
     <button
-      id="searchButton"
+      id="button"
       type="submit"
     >
       Search

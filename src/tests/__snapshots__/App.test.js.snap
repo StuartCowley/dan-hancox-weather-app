@@ -14,11 +14,12 @@ exports[`App renders App 1`] = `
       class="search-form"
     >
       <input
+        class="search-container"
         type="text"
         value=""
       />
       <button
-        id="searchButton"
+        id="button"
         type="submit"
       >
         Search

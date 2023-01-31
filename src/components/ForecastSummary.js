@@ -17,9 +17,7 @@ function ForecastSummary(props) {
         &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
-      <button className="button"
-        type="button" 
-        onClick={() => onSelect(date)}>
+      <button className="button" type="button" onClick={() => onSelect(date)}>
         Get More details
       </button>
     </div>
