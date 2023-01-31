@@ -5,9 +5,25 @@ exports[`App renders App 1`] = `
   <div
     class="weather-app"
   >
-    <h1>
+    <h1
+      class="cityName"
+    >
       , 
     </h1>
+    <div
+      class="search-form"
+    >
+      <input
+        type="text"
+        value=""
+      />
+      <button
+        id="searchButton"
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
     <div
       class="forecast-summaries"
     />
