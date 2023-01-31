@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
 import "../styles/App.css";
-import getForecast from "../requests/getForecast.js";
+import getForecast from "../requests/getForecast";
 import LocationDetails from "./LocationDetails";
 import ForecastSummaries from "./ForecastSummaries";
 import ForecastDetails from "./ForecastDetails";
 
-const App = () => {
+function App() {
   const [selectedDate, setSelectedDate] = useState(0);
   const [forecasts, setForecasts] = useState([]);
   const [location, setLocation] = useState({ city: "", country: "" });
@@ -15,12 +15,12 @@ const App = () => {
     (forecast) => forecast.date === selectedDate
   );
 
-  function handleForecastSelect(date) {
+  const handleForecastSelect = (date) => {
     setSelectedDate(date);
-  }
+  };
 
   useEffect(() => {
-    getForecast();
+    getForecast(setSelectedDate, setForecasts, setLocation);
   }, []);
 
   return (
@@ -35,6 +35,6 @@ const App = () => {
       {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
     </div>
   );
-};
+}
 
 export default App;
