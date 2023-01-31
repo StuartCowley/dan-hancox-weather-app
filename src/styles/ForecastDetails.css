@@ -1,4 +1,38 @@
 .forecast-details {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.forecast-details__date {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.forecast-details__temperature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.forecast-details__temperature div {
+  margin: 0 10px;
+}
+
+.forecast-details__wind,
+.forecast-details__humidity {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
 }
