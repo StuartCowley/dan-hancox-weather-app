@@ -8,7 +8,7 @@ exports[`it renders correctly renders a search box and button 1`] = `
     <input
       class="search-container"
       type="text"
-      value="true"
+      value="Bristol"
     />
     <button
       id="button"
