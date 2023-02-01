@@ -1,36 +1,35 @@
-.forecast-summary {
+.forecast-summaries {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 10px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  margin-top: 10px;
-  cursor: pointer;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.forecast-summary__date {
+.forecast-summary {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.forecast-summary h2 {
   font-size: 18px;
-  font-weight: bold;
-  color: #333;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 
-.forecast-summary__temperature {
-  font-size: 12px;
-  color: #333;
-  margin-right: 10px;
-}
-
-.forecast-summary__description {
+.forecast-summary h3 {
   font-size: 14px;
-  color: #333;
-  margin-right: 10px;
+  margin-top: 5px;
 }
 
-.forecast-summary__icon {
+.forecast-summary img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.forecast-summary p {
   font-size: 16px;
-  color: #333;
-  margin-left: auto;
+  margin-top: 10px;
 }
