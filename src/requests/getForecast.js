@@ -12,10 +12,23 @@ const getForecast = async (
     endpoint += `?city=${searchText}`;
   }
 
-  const response = await axios.get(endpoint);
-  setSelectedDate(response.data.forecasts[0].date);
-  setForecasts(response.data.forecasts);
-  setLocation(response.data.location);
+  axios
+    .get(endpoint)
+    .then((response) => {
+      setSelectedDate(response.data.forecasts[0].date);
+      setForecasts(response.data.forecasts);
+      setLocation(response.data.location);
+    })
+    .catch((error) => {
+      const { status } = error.response;
+      if (status === 404) {
+        /* eslint-disable-next-line no-console */
+        console.error("Location is not valid, please try again", error);
+      }
+      if (status === 500) {
+        console.error("Oh no! Server error, please try again", error);
+      }
+    });
 };
 
 export default getForecast;
