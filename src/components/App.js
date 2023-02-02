@@ -22,7 +22,13 @@ function App() {
   };
 
   const handleCitySearch = () => {
-    getForecast(searchText, setSelectedDate, setForecasts, setLocation);
+    getForecast(
+      searchText,
+      setSelectedDate,
+      setForecasts,
+      setLocation,
+      setErrorMessage
+    );
   };
 
   useEffect(() => {
@@ -47,7 +53,15 @@ function App() {
         forecasts={forecasts}
         onForecastSelect={handleForecastSelect}
       />
-
+      {!errorMessage && (
+        <>
+          <ForecastSummaries
+            forecasts={forecasts}
+            onForecastSelect={handleForecastSelect}
+          />
+          {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
+        </>
+      )}
       {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
     </div>
   );

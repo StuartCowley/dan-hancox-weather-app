@@ -4,7 +4,8 @@ const getForecast = async (
   searchText,
   setSelectedDate,
   setForecasts,
-  setLocation
+  setLocation,
+  setErrorMessage
 ) => {
   let endpoint = "https://cmd-shift-weather-app.onrender.com/forecast";
 
@@ -22,11 +23,14 @@ const getForecast = async (
     .catch((error) => {
       const { status } = error.response;
       if (status === 404) {
+        setErrorMessage("This isn't a valid town or city, please try again");
         /* eslint-disable-next-line no-console */
-        console.error("Location is not valid, please try again", error);
+        console.error("Location is not valid", error);
       }
       if (status === 500) {
-        console.error("Oh no! Server error, please try again", error);
+        setErrorMessage("Whoops! server error, please give it another try");
+        /* eslint-disable-next-line no-console */
+        console.error("Oh no! Server error", error);
       }
     });
 };
