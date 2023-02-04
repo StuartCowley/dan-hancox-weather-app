@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders correctly renders a search box and button 1`] = `
+<DocumentFragment>
+  <div
+    class="search-form"
+  >
+    <input
+      class="search-container"
+      type="text"
+      value="Bristol"
+    />
+    <button
+      id="button"
+      type="submit"
+    >
+      Search
+    </button>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,35 @@
+.forecast-summaries {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.forecast-summary {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.forecast-summary h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.forecast-summary h3 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.forecast-summary img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.forecast-summary p {
+  font-size: 16px;
+  margin-top: 10px;
+}
